@@ -1,1 +1,0 @@
-# delaki.github.io
