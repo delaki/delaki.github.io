@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            function toggle_content(which_content) {
+                //Hide all content first
+                //DEBUG
+                //alert(which_content);
+                var content = document.getElementsByClassName("content");
+                for (var i = 0; i < content.length; i++){
+                    content[i].style.display = "none";
+                }
+                
+                var navlinks = document.getElementsByClassName("menu_item");
+                for (var i = 0; i < navlinks.length; i++){
+                    navlinks[i].style.textDecoration = "none";
+                }
+                
+                //show the content of clicked item
+                document.getElementById(which_content).style.display = "block";
+                document.getElementById("navlink_"+which_content).style.textDecoration = "underline overline";
+            }
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Pascal Delaquis is a studio and touring drummer from Canada." />
+        <title>Pascal Delaquis</title>
+                    
+        <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    </head>
+    
+    <body>
+        <a name="go"></a>
+        <div id="wrapper_page">
+            <header id="menu" class="center_content">
+                <span class="menu_grouping">
+                    <a id="navlink_about" class="menu_item" href="#go" onclick="toggle_content('about')">ABOUT</a
+                    ><a id="navlink_videos" class="menu_item" href="#go" onclick="toggle_content('videos')">VIDEOS</a
+                ></span
+                ><span class="menu_grouping"
+                    ><a id="navlink_discog" class="menu_item" href="#go" onclick="toggle_content('discog')">DISCOG</a
+                    ><a id="navlink_projects" class="menu_item" href="#go" onclick="toggle_content('projects')">PROJECTS</a
+                ></span>
+            </header>
+            <header id="hidden_menu" class="center_content hidden_content">
+                <span class="menu_grouping">
+                    <a class="menu_item" href="#go" onclick="toggle_content('about')">ABOUT</a
+                    ><a class="menu_item" href="#go" onclick="toggle_content('videos')">VIDEOS</a
+                    ></span
+                ><span class="menu_grouping"
+                    ><a class="menu_item" href="#go" onclick="toggle_content('discog')">DISCOG</a
+                    ><a class="menu_item" href="#go" onclick="toggle_content('projects')">PROJECTS</a
+                ></span>
+            </header>
+            <div id="wrapper_content">
+                <div id="content">
+                    <!-- :::::::::::: ABOUT :::::::::::: -->
+                    <div id="about" class="content">
+                        <div id="wrapper_bandphoto">
+                            <img id="band_photo" src="img/pascal_bio.jpg" />
+                            <small id="photo_credit">&copy; Frédéric Petit</small>
+                        </div>
+                        <p class="description">
+                        <em id="about_pascal">Pascal Delaquis</em> is a drummer from Canada with a passion for percussive textures and deep grooves. He learned on pots and pans; a practice that has evolved into his present-day inquiries in tone and sound. He has collaborated on acclaimed studio albums, including <span><a class="paragraph_link" href="https://www.instagram.com/littlescream/" target="_blank" rel="noopener noreferrer">Little Scream</a>'s</span> <span> <a class="paragraph_link" href="https://littlescream.bandcamp.com/album/speed-queen" target="_blank" rel="noopener noreferrer"><i>Speed Queen</i></a></span> (Merge Records). On the road, Pascal has performed extensive touring throughout the Americas and Europe with the highly acclaimed <a class="paragraph_link" href="https://www.elisapie.com" target="_blank" rel="noopener noreferrer">Elisapie</a> during the album cycle of <span><a class="paragraph_link" href="https://elisapie.bandcamp.com/album/the-ballad-of-the-runaway-girl" target="_blank" rel="noopener noreferrer"><i>The Ballad of the Runaway Girl</i></a></span>.
+                        <br />
+                    </div>
+                    
+                    <!-- :::::::::::: VIDEOS :::::::::::: -->
+                    <div id="videos" class="content">
+                        <h1 class="title_video_year">[2019] Jasmine Trails</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/APtjVjsRzsk" frameborder="0" allowfullscreen class="video"></iframe></div>
+                        
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        
+                        <h1 class="title_video_year">[2019] Elisapie</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/ckZJo_8DDmw" frameborder="0" allowfullscreen class="video"></iframe></div>
+
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        
+                        <h1 class="title_video_year">[2019] Louis Venne</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/cEeOlG5_JIU" frameborder="0" allowfullscreen class="video"></iframe></div>
+
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        
+                        <h1 class="title_video_year">[2019] Claude Munson</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/oV3UN4W0tSs" frameborder="0" allowfullscreen class="video"></iframe></div>
+
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        
+                        <h1 class="title_video_year">[2018] Isaac Vallentin</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/3TL6VDuFhjk" frameborder="0" allowfullscreen class="video"></iframe></div>
+
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        
+                        <h1 class="title_video_year">[2018] Little Scream</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/DPb6ABNfaFI" frameborder="0" allowfullscreen class="video"></iframe></div>
+
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        
+                        <!--
+                        <h1 class="title_video_year">[2017] Mehdi Cayenne</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/eYfNiKWa4S0" frameborder="0" allowfullscreen class="video"></iframe></div>
+                        
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                        -->
+                        <h1 class="title_video_year">[2015] Kalle Mattson</h1>
+                        <div class="wrapper_video"><iframe loading="lazy" src="https://www.youtube.com/embed/H92_0X4wWXo" frameborder="0" allowfullscreen class="video"></iframe></div>
+
+                        <span class="between_content">&#149;&nbsp;&#149;&nbsp;&#149;</span>
+                    </div>
+                    
+                    <!-- :::::::::::: DISCOG :::::::::::: -->
+                    <div id="discog" class="content">
+                        <table id="discog_table">
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/KindDisregards_Hydenburg_small.jpeg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">KIND DISREGARDS</span>
+                                    <span class="album_info">Hydenburg</span>
+                                    <span class="album_info">2024</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/Keturah_Otherside.jpeg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">KETURAH</span>
+                                    <span class="album_info">Otherside</span>
+                                    <span class="album_info">2022</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/AlannaGurr_LifeOfTheParty.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">ALANNA GURR</span>
+                                    <span class="album_info">Life of the Party</span>
+                                    <span class="album_info">2021</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/Hilotrons_LonelyCinema.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">HILOTRONS</span>
+                                    <span class="album_info">Lonely Cinema</span>
+                                    <span class="album_info">2020</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/SheenahKo_NowhereInTime.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">SHEENAH KO</span>
+                                    <span class="album_info">Nowhere In Time</span>
+                                    <span class="album_info">2020</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/JasmineTrails.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">JASMINE TRAILS</span>
+                                    <span class="album_info">S/T</span>
+                                    <span class="album_info">2020</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/LittleScreem_SpeedQueen.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">LITTLE SCREAM</span>
+                                    <span class="album_info">Speed Queen</span>
+                                    <span class="album_info">2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/LouisVenne_BeteHeadlights.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">LOUIS VENNE</span>
+                                    <span class="album_info">Comme une bête dans les headlights</span>
+                                    <span class="album_info">2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/EvangelineGentle_LP.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">EVANGELINE GENTLE</span>
+                                    <span class="album_info">S/T</span>
+                                    <span class="album_info">2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/ScatteredClouds_TakeAwayYourSummer.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">SCATTERED CLOUDS</span>
+                                    <span class="album_info">Take Away Your Summer</span>
+                                    <span class="album_info">2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/MehdiCayenneRadioBatata.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">MEHDI CAYENNE</span>
+                                    <span class="album_info">Radio Batata</span>
+                                    <span class="album_info">2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/JonHynesCardinalGiant.JPG" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">JON HYNES</span>
+                                    <span class="album_info">Cardinal Giant</span>
+                                    <span class="album_info">2018</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/ClaudeMunsonTheSilenceCameAfter.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">CLAUDE MUNSON</span>
+                                    <span class="album_info">The Silence Came After</span>
+                                    <span class="album_info">2018</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/IsaacVallentinAmateur.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">ISAAC VALLENTIN</span>
+                                    <span class="album_info">Amateur</span>
+                                    <span class="album_info">2018</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/carlo.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">CARLO</span>
+                                    <span class="album_info">S/T</span>
+                                    <span class="album_info">2018</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/MeaghanBlanchardTheGreatEscape.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">MEAGHAN BLANCHARD</span>
+                                    <span class="album_info">The Great Escape</span>
+                                    <span class="album_info">2018</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/LittleScreamCoverSession.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">LITTLE SCREAM</span>
+                                    <span class="album_info">Polaris Cover Sessions</span>
+                                    <span class="album_info">2017</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/veldbrand.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">BOSVELD</span>
+                                    <span class="album_info">Veldbrand</span>
+                                    <span class="album_info">2015</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/mirrormaze.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">MERGANZER</span>
+                                    <span class="album_info">Mirror Maze</span>
+                                    <span class="album_info">2015</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/moodringmixtape.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">BOSVELD</span>
+                                    <span class="album_info">Moodring</span>
+                                    <span class="album_info">Mixtape by Debaser</span>
+                                    <span class="album_info">2015</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/totripwithterpsichore.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">HILOTRONS</span>
+                                    <span class="album_info">To Trip With Terpsichore</span>
+                                    <span class="album_info">2015</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/philmotion.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">PHIL MOTION</span>
+                                    <span class="album_info">Time Bomb</span>
+                                    <span class="album_info">2012</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/claudemunson.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">CLAUDE MUNSON</span>
+                                    <span class="album_info">&amp; The Storm Outside</span>
+                                    <span class="album_info">2012</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="album_art">
+                                    <img class="album_art" src="img/albums/ianketeku.jpg" loading="lazy" />
+                                </td>
+                                <td class="album_info">
+                                    <span class="album_info">IAN KETEKU</span>
+                                    <span class="album_info">Lessons From Planet Earth</span>
+                                    <span class="album_info">2011</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- :::::::::::: PROJECTS :::::::::::: -->
+                    <div id="projects" class="content">
+                        <p id="p_projects">
+                            Through the years, I've had the pleasure to collaborate with the following groups and humans, whether it be in the studio, the stage, or a live session.
+                        </p>
+                        <ul id="list_ppl_bands">
+                            <li class="item_ppl_bands">Alanna Gurr</li>
+                            <li class="item_ppl_bands">Bosveld</li>
+                            <li class="item_ppl_bands">Camille Delean</li>
+                            <li class="item_ppl_bands">Claude Munson</li>
+                            <li class="item_ppl_bands">Elisapie</li>
+                            <li class="item_ppl_bands">Evangeline Gentle</li>
+                            <li class="item_ppl_bands">Hilotrons</li>
+                            <li class="item_ppl_bands">Ian Keteku</li>
+                            <li class="item_ppl_bands">Isaac Vallentin</li>
+                            <li class="item_ppl_bands">Jasmine Trails</li>
+                            <li class="item_ppl_bands">Jenn Grant</li>
+                            <li class="item_ppl_bands">Jeremy Fisher</li>
+                            <li class="item_ppl_bands">Jim Bryson</li>
+                            <li class="item_ppl_bands">Jon Hynes</li>
+                            <li class="item_ppl_bands">Kalle Mattson</li>
+                            <li class="item_ppl_bands">Kandle</li>
+                            <li class="item_ppl_bands">Little Scream</li>
+                            <li class="item_ppl_bands">Liv Wade</li>
+                            <li class="item_ppl_bands">Louis Venne</li>
+                            <li class="item_ppl_bands">Louis-Philippe Robillard</li>
+                            <li class="item_ppl_bands">Marcus Paquin</li>
+                            <li class="item_ppl_bands">Meaghan Blanchard</li>
+                            <li class="item_ppl_bands">Mehdi Cayenne</li>
+                            <li class="item_ppl_bands">Merganzer</li>
+                            <li class="item_ppl_bands">Old Cabin</li>
+                            <li class="item_ppl_bands">Phil Motion</li>
+                            <li class="item_ppl_bands">Richard Reed Parry</li>
+                            <li class="item_ppl_bands">Scattered Clouds</li>
+                            <li class="item_ppl_bands">Sheenah Ko</li>
+                            <!--
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://bosveld.bandcamp.com" target="_blank">Bosveld</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://camilledelean.com" target="_blank">Camille Delean</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://www.facebook.com/claude.munson/" target="_blank">Claude Munson</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://www.elisapie.com" target="_blank">Elisapie</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://en.wikipedia.org/wiki/Hilotrons" target="_blank">Hilotrons</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.ianketeku.com" target="_blank">Ian Keteku</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.isaacvallentin.com/#past-shows" target="_blank">Isaac Vallentin</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.kelpmanagement.com/jasminetrails" target="_blank">Jasmine Trails</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.jenngrant.com" target="_blank">Jenn Grant</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.jonhynesmusic.com" target="_blank">Jon Hynes</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.kallemattson.com" target="_blank">Kalle Mattson</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://www.kandle-music.com" target="_blank">Kandle</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://www.littlescream.com" target="_blank">Little Scream</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://www.facebook.com/livwadesmusic/" target="_blank">Liv Wade</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.louisvenne.com" target="_blank">Louis Venne</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://meaghanblanchard.com" target="_blank">Meaghan Blanchard</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.mehdicayenneclub.com" target="_blank">Mehdi Cayenne</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://www.facebook.com/merganzermusic/" target="_blank">Merganzer</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://oldcabin.ca" target="_blank">Old Cabin</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="https://philmotion.bandcamp.com" target="_blank">Phil Motion</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.scatteredcloudsmusic.com" target="_blank">Scattered Clouds</a></li>
+                             <li class="item_ppl_bands"><a class="link_ppl_bands" href="http://www.sheenahko.com" target="_blank">Sheenah Ko</a></li>
+                             -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="center_content contact_footer hidden_content">
+                info<em class="contact_footer">@</em>KindDisregards.com
+            </footer>
+            <footer id="footer_block" class="center_content contact_footer">
+                info<em class="contact_footer">@</em>PascalDelaquis.com
+            </footer>
+            
+        </div>
+    </body>
+</html>
