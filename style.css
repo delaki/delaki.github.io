@@ -418,7 +418,7 @@ a.album_link:visited {
 
 a.album_link:active {
     color: hotpink;
-    text-decoration:none;
+    text-decoration: underline overline;
 }
 
 /* STREAM LINKS */
