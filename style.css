@@ -407,6 +407,7 @@ a.album_link:link {
 a.album_link:visited {
     /*color: #b8add9*/
     color: #b0a7c9;
+    text-decoration: underline overline;
 }
 
 @media (hover: hover) {
