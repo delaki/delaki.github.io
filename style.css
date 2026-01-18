@@ -392,34 +392,30 @@ a.paragraph_link:active {
 }
 
 /* ALBUM LINKS */
-a.album_link {
-    font-size:12pt;
-    text-decoration: underline overline;
-}
-
 a.album_link:link {
-    text-decoration: underline overline;
-    text-underline-offset:0.3em;
     /*color: #b8add9;*/
+    text-decoration: none;
+    border-top: 1px solid #b0a7c9;
+    border-bottom: 1px solid #b0a7c9;
     color: #b0a7c9;
 }
 
 a.album_link:visited {
     /*color: #b8add9*/
+    text-decoration: none;
     color: #b0a7c9;
-    text-decoration: underline overline;
 }
 
 @media (hover: hover) {
     a.album_link:hover {
+        text-decoration: none;
         color: hotpink;
-        text-decoration: underline overline;
     }
 }
 
 a.album_link:active {
+    text-decoration: none;
     color: hotpink;
-    text-decoration: underline overline;
 }
 
 /* STREAM LINKS */
