@@ -393,7 +393,7 @@ a.paragraph_link:active {
 /* ALBUM LINKS */
 a.album_link {
     text-decoration: none;
-    padding-top: 2px;
+    padding-top: 3px;
     padding-bottom: 2px;
 }
 
