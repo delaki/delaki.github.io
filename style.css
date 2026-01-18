@@ -269,8 +269,7 @@ td.album_info {
 
 span.album_info {
     display:block;
-    padding-top:1%;
-    padding-bottom:1%;
+    padding-top:2%;
     padding-left:4%;
 }
 
@@ -395,7 +394,7 @@ a.paragraph_link:active {
 a.album_link {
     text-decoration: none;
     padding-top: 2px;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
 }
 
 a.album_link:link {
