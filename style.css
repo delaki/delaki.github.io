@@ -392,6 +392,11 @@ a.paragraph_link:active {
 }
 
 /* ALBUM LINKS */
+a.album_link {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 a.album_link:link {
     /*color: #b8add9;*/
     text-decoration: none;
@@ -409,12 +414,16 @@ a.album_link:visited {
 @media (hover: hover) {
     a.album_link:hover {
         text-decoration: none;
+        border-top-color: #b0a7c9;
+        border-bottom-color: #b0a7c9;
         color: hotpink;
     }
 }
 
 a.album_link:active {
     text-decoration: none;
+    border-top-color: #b0a7c9;
+    border-bottom-color: #b0a7c9;
     color: hotpink;
 }
 
