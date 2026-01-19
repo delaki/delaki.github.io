@@ -276,12 +276,24 @@ span.album_artist {
     font-size:12pt;
 }
 
+/*
 p.album_info {
     display:inline;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 1px;
+    border: 1px solid #777777;
+}
+ */
+
+p.album_info {
     margin-left: 4%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
     border: 1px solid #777777;
 }
 
