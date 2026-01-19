@@ -264,13 +264,16 @@ tr.show_entry {
 td.album_info {
     font-size:10pt;
     color:#999999;
-    //background-color:red;
 }
 
 span.album_info {
     display:block;
     padding-top:2%;
     padding-left:4%;
+}
+
+span.album_artist {
+    font-size:12pt;
 }
 
 p.album_info {
