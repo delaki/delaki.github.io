@@ -267,6 +267,7 @@ td.album_info {
 }
 
 span.album_info {
+span.album_info {
     display:block;
     padding-top:2%;
     padding-left:4%;
@@ -277,7 +278,12 @@ span.album_artist {
 }
 
 p.album_info {
-    padding-left:4%;
+    display:inline;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 1px;
+    margin-left: 4%;
+    border: 1px solid #777777;
 }
 
 em.contact_footer {
@@ -403,28 +409,24 @@ a.album_link:link {
     padding-top:4px;
     padding-bottom:3px;
     text-decoration: none;
-    border: 1px solid #777777;
     color: #999999;
 }
 
 a.album_link:visited {
     /*color: #b8add9*/
     text-decoration: none;
-    border: 1px solid #777777;
     color: #999999;
 }
 
 @media (hover: hover) {
     a.album_link:hover {
         text-decoration: none;
-        border: 1px solid #777777;
         color: hotpink;
     }
 }
 
 a.album_link:active {
     text-decoration: none;
-    border: 1px solid #777777;
     color: hotpink;
 }
 
