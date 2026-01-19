@@ -397,31 +397,31 @@ a.paragraph_link:active {
 /* ALBUM LINKS */
 a.album_link:link {
     /*color: #b8add9;*/
-    padding-top:3px;
+    padding-top:4px;
     padding-bottom:3px;
     text-decoration: none;
-    border: 1px solid #999999;
+    border: 1px solid #777777;
     color: #999999;
 }
 
 a.album_link:visited {
     /*color: #b8add9*/
     text-decoration: none;
+    border: 1px solid #777777;
     color: #999999;
 }
 
 @media (hover: hover) {
     a.album_link:hover {
         text-decoration: none;
-        border: 1px solid #b0a7c9;
+        border: 1px solid #777777;
         color: hotpink;
     }
 }
 
 a.album_link:active {
     text-decoration: none;
-    border-top-color: #b0a7c9;
-    border-bottom-color: #b0a7c9;
+    border: 1px solid #777777;
     color: hotpink;
 }
 
