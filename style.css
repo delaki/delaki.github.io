@@ -452,7 +452,8 @@ a.stream_link {
     padding-bottom:10px;
     padding-left:8px;
     padding-right:8px;
-    background-color: #1E1E1E;
+    //background-color: #1E1E1E;
+    background-color:#2A2A2A
     max-height:30px;
     max-width:250px;
     margin-left:auto;
@@ -462,11 +463,13 @@ a.stream_link {
 }
 
 a.stream_link:link {
-    background-color: #1E1E1E;
+    //background-color: #1E1E1E;
+    background-color:#2A2A2A
 }
 
 a.stream_link:visited {
-    background-color: #1E1E1E;
+    //background-color: #1E1E1E;
+    background-color:#2A2A2A
 }
 
 a.stream_link:hover {
